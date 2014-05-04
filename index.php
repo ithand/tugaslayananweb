@@ -34,11 +34,9 @@ function scrapeDetik($url){
 		//$array[$x]['linkOwner'] = $linkOwnerQuery->item($x)->nodeValue;
 		//$array[$x]['linkOwnerHref'] = $baseUrl . $linkOwnerHrefQuery->item($x)->nodeValue;
 		//$array[$x]['linkTimestamp'] = $linkTimestampQuery->item($x)->nodeValue;
-
 	}
 	fclose($fh);
 	return $array;
 }
 
 $data = scrapeDetik("http://www.detik.com");
-
